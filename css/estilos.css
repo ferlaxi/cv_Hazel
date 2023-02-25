@@ -1,0 +1,409 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* General */
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Asap', sans-serif;
+}
+
+
+
+
+/* header */
+header{
+    width: 300px;
+    height: 200vh;
+    border-right: 1px solid rgb(233, 233, 233);
+    position: fixed;
+    z-index: 1;
+}
+
+.perfil_img{
+    left: 80px;
+    top: 50px;
+    border-radius: 50%;
+    position: fixed;
+}
+
+.nombre{
+    left: 50px;
+    top: 200px;
+    font-size: 30px;
+    font-weight: bolder;
+    position: fixed;
+}
+
+
+
+
+/* Menu */
+.menu{
+    position: fixed;
+    top: 220px;
+}
+.menu ul{
+    margin-left: 35px;
+    margin-top: 60px;
+}
+
+.menu ul li{
+    padding: 22px;
+    font-size: 18px;
+    list-style-type: none;
+}
+
+.menu ul li a{
+    text-decoration:none;
+    color: black;
+    position: relative;
+    
+}
+
+.menu ul li a::after{
+    content: '';
+    width: 0;
+    height: 4px;
+    background-color: rgb(103, 201, 226);
+    position: absolute;
+    bottom: -4px;
+    right: 50%;
+    transition: all .5s;
+}
+
+.menu ul li a:hover::after{
+    width: 100%;
+    right: 0;
+}
+
+.redes{
+    top: 800px;
+    left: 30px;
+    position: fixed;
+}
+.redes a{
+    margin-left: 30px;
+}
+
+
+
+
+/* Redes */
+.redes .facebook{
+    transition: all .5s;
+}
+.redes .facebook:hover{
+    filter: invert(74%) sepia(58%) saturate(460%) hue-rotate(156deg) brightness(93%) contrast(89%);
+}
+
+.redes .linkedin{
+    transition: all .5s;
+}
+.redes .linkedin:hover{
+    filter: invert(74%) sepia(58%) saturate(460%) hue-rotate(156deg) brightness(93%) contrast(89%);
+}
+
+.redes .twitter{
+    transition: all .5s;
+}
+.redes .twitter:hover{
+    filter: invert(74%) sepia(58%) saturate(460%) hue-rotate(156deg) brightness(93%) contrast(89%);
+}
+
+.redes .instagram{
+    transition: all .5s;
+}
+.redes .instagram:hover{
+    filter: invert(74%) sepia(58%) saturate(460%) hue-rotate(156deg) brightness(93%) contrast(89%);
+}
+
+
+
+
+/* Seccion inicio */
+.section_inicio{
+    padding-top: 20%;
+    margin-top: -70px;
+    height: 100vh;
+}
+.section_inicio strong{
+    margin-left: 45%;
+    margin-top: 50%;
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.section_inicio .saludo{
+    
+    width: 500px;
+    line-height: 27px;
+    margin-left: 45%;
+    margin-top: 1%;
+    font-size: 20px;
+}
+
+.section_inicio .contacto{
+    display: block;
+    width: 130px;
+    background-color: rgb(103, 201, 226);
+    border: solid 2px rgb(103, 201, 226);
+    color: white;
+    text-decoration: none;
+    margin-left: 45%;
+    margin-top: 1%;
+    font-size: 20px;
+    padding: 10px;
+    transition: all .7s;
+}
+
+.section_inicio .contacto:hover{
+    background-color: white;
+    color: rgb(103, 201, 226);
+}
+
+
+
+
+/* Seccion Datos */
+.section_datos{
+    margin-left: 15%;
+    padding-top: 12%;
+    height: 100vh;
+}
+
+.section_datos p{
+    margin-left: 5%;
+    margin-top: -30px;
+}
+
+.section_datos .correo{
+    margin-top: 50px;
+    margin-left: 400px;
+}
+
+.section_datos .correo .correo_img{
+    width: 50px;
+}
+
+.section_datos .cumple{
+    margin-top: 50px;
+    margin-left: 400px;
+}
+.section_datos .cumple .cumple_img{
+    width: 50px;
+}
+
+.section_datos .ubicacion{
+    margin-top: 50px;
+    margin-left: 400px;
+}
+.section_datos .ubicacion .ubicacion_img{
+    width: 50px;
+}
+
+.section_datos .telefono{
+    margin-top: 50px;
+    margin-left: 400px;
+}
+.section_datos .telefono .telefono_img{
+    width: 50px;
+}
+
+
+
+
+/* Seccion Estudios */
+.section_estudios{
+    margin-bottom: 20%;
+    padding-top: 12%;
+}
+
+.section_estudios .estudios_img{
+    margin-left: 50%;
+    width: 70px;
+}
+
+.section_estudios .lugar1{
+    margin-top: 50px;
+    margin-left: 44%;
+    font-size: 20px;
+}
+
+.section_estudios .lugar2{
+    margin-top: 50px;
+    margin-left: 44%;
+    font-size: 20px;
+}
+
+
+
+
+/* Seccion Experiencia */
+.section_experiencia{
+    height: 100vh;
+    padding-top: 12%;
+}
+
+.section_experiencia .exp1{
+    margin-left: 30%;
+}
+
+.section_experiencia .exp1 strong{
+    font-size: 25px;
+}
+
+.section_experiencia .exp1 .infotw{
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    background-color: rgb(103, 201, 226);
+    border: solid 2px rgb(103, 201, 226);
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+    margin-left: 240px;
+    margin-top: -20px;
+    width: 75px;
+    margin-bottom: 10px;
+    transition: all .5s;
+}
+
+.section_experiencia .exp1 .infotw:hover{
+    background-color: white;
+    color: rgb(103, 201, 226);
+}
+
+.section_experiencia .info_tw{
+    width: 500px;
+    border: 1px solid rgb(209, 209, 209);
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 30%;
+    margin-top: -8%;
+    display: none;
+}
+
+.section_experiencia .exp2{
+    margin-left: 30%;
+    margin-top: 150px;
+}
+
+.section_experiencia .exp2 strong{
+    font-size: 25px;
+}
+
+.section_experiencia .exp2 .infoadidas{
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    background-color: rgb(103, 201, 226);
+    border: solid 2px rgb(103, 201, 226);
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+    margin-left: 240px;
+    margin-top: -20px;
+    width: 75px;
+    margin-bottom: 10px;
+    transition: all .5s;
+}
+
+.section_experiencia .exp2 .infoadidas:hover{
+    background-color: white;
+    color: rgb(103, 201, 226);
+}
+
+.section_experiencia .info_adidas{
+    width: 500px;
+    border: 1px solid rgb(209, 209, 209);
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 30%;
+    margin-top: -8%;
+    display: none;
+}
+
+
+
+
+/* Seccion Habilidades */
+.section_habilidades{
+    height: 100vh;
+    padding-top: 12%;
+}
+
+.section_habilidades ul{
+    margin-left: 40%;
+}
+
+.section_habilidades ul li{
+    padding-top: 15px;
+}
+
+
+
+
+/* Seccion Contacto */
+.section_contacto{
+    height: 100vh;
+    padding-top: 12%;
+}
+
+.section_contacto form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-left: 45%;
+}
+
+.section_contacto form input{
+    margin-top: 5px;
+    margin-bottom: 20px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+.section_contacto form textarea{
+    resize: none;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.section_contacto form a{
+    background-color: rgb(103, 201, 226);
+    border: solid 2px rgb(103, 201, 226);
+    color: white;
+    text-decoration: none;
+    width: 60px;
+    padding: 5px;
+    margin-top: 10px;
+    transition: all .5s;
+}
+
+.section_contacto form a:hover{
+    background-color: white;
+    color: rgb(103, 201, 226);
+}
+
+
+
+@media  (max-width: 1440px) {
+    .section_datos p{
+        margin-left: 8%;
+        
+    }
+
+    .section_experiencia .exp1 .info_tw{
+        margin-left: 40%;
+    }
+
+    .section_experiencia .exp2 .info_adidas{
+        margin-left: 40%;
+    }
+}
